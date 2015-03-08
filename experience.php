@@ -19,7 +19,7 @@
 				<h4>Undergraduate Researcher And Supervisor</h4>
 			</div>
 			<div class="row job-description">
-				Worked with a professor to develop programs that could play games such as Hex or Bridg-it.  Supervised a high school summer student.
+				Worked with a professor to develop programs that could play games such as Hex or Y.  Took an interest in the game <i>Bridg-It</i> and created AI which was mathematically impossible to beat (Assuming the AI played first). I also supervised a high school summer student and helped him through learning C/C++.
 			</div>
 		</div>
 	</div>	
@@ -37,7 +37,7 @@
 				<h4>Web Developer</h4>
 			</div>
 			<div class="row job-description">
-				Worked with various independent clients to develop professional looking websites.
+				Worked with various independent clients to develop professional looking websites.  
 			</div>
 		</div>
 	</div>

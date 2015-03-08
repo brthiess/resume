@@ -9,6 +9,7 @@
 <?php include "bio.php";?>
 
 <?php include "experience.php";?>
+<?php include "education.php";?>
 <?php include "skills.php";?>
 <?php include "projects.php";?>
 

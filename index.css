@@ -90,7 +90,8 @@ Bio Container
 }
 
 .my-pictures {
-	overflow: hidden;
+	position:relative;
+	overflow: hidden !important;
 	width: 300px;
 	height: 300px;
 	border-radius: 150px;
@@ -99,12 +100,117 @@ Bio Container
 	border-color: #2c3e50;
 }
 
+.my-pictures .background{
+	background-size: contain;
+	position:absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.my-pictures .one {
+	background: url(images/me1.jpg);
+	background-size: contain;
+	animation: 30s one infinite; 
+  -webkit-animation: 30s one infinite;
+}
+
+.my-pictures .two {
+	background: url(images/me2.jpg);
+	background-size: contain;
+	opacity: 0;
+		animation: 30s two infinite; 
+  -webkit-animation: 30s two infinite;
+}
+
+.my-pictures .three {
+	background: url(images/me3.jpg);
+	background-size: contain;
+	opacity: 0;
+		animation: 30s three infinite; 
+  -webkit-animation: 30s three infinite;
+}
+
+.my-pictures .four {
+	background: url(images/me4.jpg);
+	background-size: contain;
+	opacity: 0;
+		animation: 30s four infinite; 
+  -webkit-animation: 30s four infinite;
+}
+
+.my-pictures .five {
+	background: url(images/me5.jpg);
+	background-size: contain;
+	opacity: 0;
+		animation: 30s five infinite; 
+  -webkit-animation: 30s five infinite;
+}
+
+
+
+
+@keyframes one {
+	0% {opacity: 1;}
+	15% {opacity: 1;}	
+	20% {opacity: 0;}
+	95% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes two {
+	0% {opacity: 0;}
+	15% {opacity: 0;}	
+	20% {opacity: 1;}
+	35% {opacity: 1;}
+	40% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes three {
+	0% {opacity: 0;}
+	35% {opacity: 0;}
+	40% {opacity: 1;}
+	55% {opacity: 1;}
+	60% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes four {
+	0% {opacity: 0;}
+	55% {opacity: 0;}
+	60% {opacity: 1;}
+	75% {opacity: 1;}
+	80% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@keyframes five {
+	0% {opacity: 0;}
+	75% {opacity: 0;}
+	80% {opacity: 1;}
+	95% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@keyframes my-pictures {
+	0% {background: url(images/me1.jpg);}
+	20% {background: url(images/me2.jpg);}
+	40% {background: url(images/me3.jpg);}
+	60% {background: url(images/me4.jpg);}
+	80% {background: url(images/me5.jpg);}
+	100% {background: url(images/me1.jpg);}
+}
+
 @media (max-width: 600px) {
 	.my-pictures {
 		width: 200px;
 		height: 200px;
 		border-radius: 100px;
 	}
+}
+
+.bio-container .bold {
+	font-weight: 900;
 }
 
 /***********
@@ -124,6 +230,28 @@ Experience
 }
 
 .experience .date {
+	color: white;
+	font-style: italic;
+	
+}
+
+/******************
+Education
+******************/
+.education {
+	background: #7f8c8d;
+	color: white;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.education h1, .education h2, .education h3, .education h4 {
+	color: white !important;
+	font-weight: 600 !important;
+	margin-top: 30px;
+}
+
+.education .date {
 	color: white;
 	font-style: italic;
 	
@@ -237,32 +365,13 @@ Projects
 	z-index:1000
 }
 
-.projects .new-website img {
+.projects .new-website > img {
 	opacity: 0;
 }
 
-.projects .new-website {
+.projects  .new-website {
 	background: #1abc9c;
 }
-
-.projects .new-website .plus {
-	opacity: 1;
-	font-weight: 900;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0%;
-	left: 0%;
-	font-size: 20em;
-	margin-top: 0em;
-	padding-top: 0em;
-	color: white;
-	z-index: 9002;
-}
-
-
-
-
 
 
 /********************

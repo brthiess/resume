@@ -9,15 +9,17 @@
 	<div class="col-sm-4">
 		<div class="col-sm-6 col-sm-offset-6 bio-description">
 			<h3>Bio</h3>
-			<p>I am a passionate web developer who loves to blah blah blah</p>
+			<p>I am a passionate web developer with plenty of skills in front end and back end development.  I enjoy working in teams and coming together to create something great</p>
 		</div>
 	</div>
 	<div class="col-sm-4 circle-picture-container">
 		<div class="my-pictures center-block">
-			<img class="img-responsive" src="images/me1.jpg">
-			<img src="images/me2.jpg">
-			<img src="images/me3.jpg">
-			<img src="images/me4.jpg">
+		<div class="background one"></div>
+		<div class="background two"></div>
+		<div class="background three"></div>
+		<div class="background four"></div>
+		<div class="background five"></div>
+
 		</div>
 	</div>
 	<div class="col-sm-4">
@@ -27,7 +29,7 @@
 			<p>Brad Thiessen</p>
 			<p class="bold">Age:</p>
 			<p>24</p>
-			<p class="bold">Hometown</p>
+			<p class="bold">Hometown:</p>
 			<p>Edmonton, AB</p>
 		</div>
 	</div>

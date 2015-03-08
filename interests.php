@@ -26,10 +26,10 @@
 		<div class="col-lg-2 col-md-4 col-sm-6">
 			<div class="interest-icon center-block blue text-center">
 				<div class="interest-icon-image">
-					<img src="images/plane-icon.png">
+					<img src="images/physics-icon.png">
 				</div>
 				<div class="description">
-					<p>Travel</p>
+					<p>Physics</p>
 				</div>
 			</div>
 		</div>
@@ -46,20 +46,20 @@
 		<div class="col-lg-2 col-md-4 col-sm-6">
 			<div class="interest-icon center-block teal text-center">
 				<div class="interest-icon-image">
-					<img src="images/curling-icon.png">
+					<img src="images/reading-icon.png">
 				</div>
 				<div class="description">
-					<p>Curling</p>
+					<p>Reading</p>
 				</div>
 			</div>
 		</div>
 		<div class="col-lg-2 col-md-4 col-sm-6">
 			<div class="interest-icon center-block yellow text-center">
 				<div class="interest-icon-image">
-					<img src="images/curling-icon.png">
+					<img src="images/rubiks-icon.png">
 				</div>
 				<div class="description">
-					<p>Curling</p>
+					<p>Rubik's Cubes</p>
 				</div>
 			</div>
 		</div>
