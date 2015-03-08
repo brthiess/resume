@@ -6,7 +6,7 @@
 		<h2>Online Resume</h2>
 	</div>
 	<div class="social-icons col-sm-12">
-		<div class="col-sm-2 col-sm-offset-5">
+		<div class="col-sm-4 col-sm-offset-4">
 			<div class="icon col-sm-3">
 				<img src="images/twitter-icon-white.png">
 			</div>

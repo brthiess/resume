@@ -9,8 +9,17 @@
 <?php include "bio.php";?>
 
 <?php include "experience.php";?>
+<?php include "skills.php";?>
+<?php include "projects.php";?>
+
+
 
 <?php include "interests.php";?>
+
+<?php include "contact.php";?>
+
+
+<?php include "footer.php";?>
 
 </body>
 </html>

@@ -3,6 +3,9 @@
 		<h2>About Me</h2>
 		<h3>I am a software/web developer</h3>
 	</div>
+	<div class="col-sm-8 col-sm-offset-2">
+		<img class="center-block img-responsive" src="images/gray-line.png"><br><br>
+	</div>
 	<div class="col-sm-4">
 		<div class="col-sm-6 col-sm-offset-6 bio-description">
 			<h3>Bio</h3>

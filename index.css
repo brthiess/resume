@@ -14,7 +14,7 @@ h2 {
 
 h3 {
 	font-size: 2em;
-	font-weight: 100;
+	font-weight: 500 !important;
 }
 
 @media (max-width: 768px) {
@@ -42,7 +42,7 @@ Jumbotron Container
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	min-height: 30em;
+	min-height: 39em;
 	background: linear-gradient(
 	rgba(0,0,0,0.5),
 	rgba(0,0,0,0.5)
@@ -112,17 +112,170 @@ Experience
 ************/
 .experience {
 	background: #2c3e50;
+	color: white;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
-.experience h1, .experience h2, .experience h3  {
+.experience h1, .experience h2, .experience h3, .experience h4 {
 	color: white !important;
+	font-weight: 600 !important;
+	margin-top: 30px;
 }
+
+.experience .date {
+	color: white;
+	font-style: italic;
+	
+}
+
+/**********************
+skills
+************************/
+.skills {
+	background:white !important;
+}
+.skills .chart-holder {
+	position: relative;
+	width: 150px;
+}
+
+.skills .chart-holder .percentage {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	font-weight: 700;
+	font-size: 1.5em;
+	color: #666666;
+}
+.skills .chart-holder .skill {
+	font-weight: 700;
+	color: #666666;
+}
+
+.skills .skill {
+	font-weight: 500;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+/*******************
+Projects
+********************/
+.projects {
+	background: #8e44ad;
+	padding-bottom: 2em;
+}
+
+.projects h2 {
+	color: white;
+}
+
+.projects h3 {
+	color: white;
+	font-size: 2.5em;
+	font-weight: 600;
+}
+
+.projects h4 {
+	color: white;
+	font-size: 1.2em;
+	font-weight: 0;
+}
+
+@media (max-width: 500px) {
+	.projects h4 {
+		font-size: 1em;
+	}
+	.projects h3 {
+		font-size: 1.5em;
+	}
+}
+
+.projects .website-image {
+	margin-bottom: 2em;
+	position: relative;
+	overflow: hidden;
+}
+
+.projects .website-image .caption {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: -100%;
+	background:#1abc9c;
+	opacity: 0.9;
+	z-index:999;
+	transition: top 0.5s;
+}
+
+.projects .website-image .caption-still {
+	position:absolute;
+	right: 0%;
+	top: 0%;
+	height: 40px;
+	width: 40px;
+	background: #1abc9c;
+	z-index: 1001;
+}
+
+.projects .website-image .caption-still img {
+	height: 50%;
+	width: 50%;
+	position: absolute;
+	left: 25%;
+	top: 25%;
+}
+
+.projects .website-image .caption-text {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 90%;
+	opacity: 0;
+	transition: opacity 0.5s;
+	z-index:1000
+}
+
+.projects .new-website img {
+	opacity: 0;
+}
+
+.projects .new-website {
+	background: #1abc9c;
+}
+
+.projects .new-website .plus {
+	opacity: 1;
+	font-weight: 900;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	font-size: 20em;
+	margin-top: 0em;
+	padding-top: 0em;
+	color: white;
+	z-index: 9002;
+}
+
+
+
+
+
 
 /********************
 Interests
 **********************/
 .interests {
 	background: white;
+}
+
+@media (max-width: 768px) {
+	.interests {
+		min-height:80em;
+	}
 }
 
 .interests h1, h2, h3 {
@@ -140,9 +293,28 @@ Interests
 }
 
 .interests .interest-icon:hover {
-	background: #27ae60;
 	transition: background 1s;
 }
+
+.interests .yellow:hover {
+	background: #f1c40f;
+}
+.interests .red:hover {
+	background: #e74c3c;
+}
+.interests .blue:hover {
+	background: #3498db;
+}
+.interests .green:hover {
+	background: #2ecc71;
+}
+.interests .purple:hover {
+	background: #9b59b6;
+}
+.interests .teal:hover {
+	background: #1abc9c;
+}
+
 
 .interests .interest-icon-image  {
 	height: 30%;
@@ -156,4 +328,21 @@ Interests
 
 .interests .interest-icon .description {
 	font-weight: 600;
+}
+
+/********************
+Contact
+******************/
+.contact {
+	background: #666666;
+	padding-bottom:2em;
+}
+
+.contact h2 {
+	color: white;
+}
+
+.contact .social-icons img {
+	width: 50px;
+	margin-bottom: 1em;
 }
