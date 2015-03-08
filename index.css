@@ -1,0 +1,159 @@
+h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+h1 {
+	font-size: 6.5em;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 5em;
+	font-weight: 200;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: 100;
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 3.5em;
+	}
+
+	h2 {
+		font-size: 2.5em;
+	}
+}
+
+body {
+	margin: 0em;
+}
+
+/*****************************
+Jumbotron Container
+******************************/
+.jumbotron-container h1, .jumbotron-container h2, .jumbotron-container h3 {
+	color: white;
+}
+.jumbotron-container {
+	margin-top: 0em;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	min-height: 30em;
+	background: linear-gradient(
+	rgba(0,0,0,0.5),
+	rgba(0,0,0,0.5)
+	),
+	url(images/background.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+	padding-top: 20vh;
+}
+
+.jumbotron-container h1 {
+	text-align: middle;
+}
+
+.jumbotron-container .icon img {
+	width: 3em;
+	height: auto;
+	display: inline;
+	margin-top: 0.5em;
+}
+
+/*************************
+Bio Container
+**************************/
+
+.bio-container {
+	background: white;
+	margin: 0em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	text-align: center;
+}
+
+.bio-container h1, .bio-container h2, .bio-container h3 {
+	color: #2c3e50;
+}
+
+.bio-container p {
+	color: #666666;
+}
+
+.about-me h3 {
+	color: #27ae60 !important;
+}
+
+.my-pictures {
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #2c3e50;
+}
+
+@media (max-width: 600px) {
+	.my-pictures {
+		width: 200px;
+		height: 200px;
+		border-radius: 100px;
+	}
+}
+
+/***********
+Experience
+************/
+.experience {
+	background: #2c3e50;
+}
+
+.experience h1, .experience h2, .experience h3  {
+	color: white !important;
+}
+
+/********************
+Interests
+**********************/
+.interests {
+	background: white;
+}
+
+.interests h1, h2, h3 {
+	color: #666666;
+}
+
+.interests .interest-icon {
+	background: #bdc3c7;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	padding-top: 45px;
+	margin-bottom: 2em;
+}
+
+.interests .interest-icon:hover {
+	background: #27ae60;
+	transition: background 1s;
+}
+
+.interests .interest-icon-image  {
+	height: 30%;
+	margin-bottom: 20px;
+}
+
+.interests .interest-icon-image img {
+	height: 100%;
+}
+
+
+.interests .interest-icon .description {
+	font-weight: 600;
+}
