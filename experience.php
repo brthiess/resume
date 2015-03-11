@@ -6,7 +6,7 @@
 		<img class="center-block img-responsive" src="images/white-line.png">
 	</div>
 	<div class="col-sm-12">
-		<div class="col-sm-3 col-sm-offset-3">
+		<div class="col-sm-3 col-sm-offset-3 job-location-and-date">
 			<div class="row workplace">
 				<h3>University Of Alberta</h3>
 			</div>
@@ -14,7 +14,7 @@
 				May 1, 2014 - September 1, 2014
 			</div>
 		</div>
-		<div class="col-sm-4 ">
+		<div class="col-sm-4 job-title-and-description">
 			<div class="row job-title">
 				<h4>Undergraduate Researcher And Supervisor</h4>
 			</div>
@@ -24,7 +24,7 @@
 		</div>
 	</div>	
 		<div class="col-sm-12">
-		<div class="col-sm-3 col-sm-offset-3">
+		<div class="col-sm-3 col-sm-offset-3 job-location-and-date">
 			<div class="row workplace">
 				<h3>Various Clients</h3>
 			</div>
@@ -32,7 +32,7 @@
 				January 1, 2014 - Current
 			</div>
 		</div>
-		<div class="col-sm-4 ">
+		<div class="col-sm-4 job-title-and-description">
 			<div class="row job-title">
 				<h4>Web Developer</h4>
 			</div>
@@ -42,7 +42,7 @@
 		</div>
 	</div>
 		<div class="col-sm-12">
-		<div class="col-sm-3 col-sm-offset-3">
+		<div class="col-sm-3 col-sm-offset-3 job-location-and-date">
 			<div class="row workplace">
 				<h3>Big Top Tent Rentals</h3>
 			</div>
@@ -50,7 +50,7 @@
 				May 1, 2011 - Current
 			</div>
 		</div>
-		<div class="col-sm-4 ">
+		<div class="col-sm-4 job-title-and-description">
 			<div class="row job-title">
 				<h4>Summer Labourer</h4>
 			</div>

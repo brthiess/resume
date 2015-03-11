@@ -14,6 +14,6 @@ function insertChart(name, percentage) {
 	]
 	var ctx = document.getElementById(name).getContext("2d");
 	var myDoughnutChart = new Chart(ctx).Doughnut(data,{
-		bezierCurve: false
+		animation: false
 	});
 }

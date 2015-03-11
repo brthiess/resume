@@ -14,7 +14,7 @@
 				September, 2013 - April, 2015
 			</div>
 		</div>
-		<div class="col-sm-4 ">
+		<div class="col-sm-4 degree-title-and-description">
 			<div class="row job-title">
 				<h4>Bachelor of Science | Specialization in Computer Science</h4>
 			</div>
@@ -32,7 +32,7 @@
 				September, 2008 - April, 2013
 			</div>
 		</div>
-		<div class="col-sm-4 ">
+		<div class="col-sm-4 degree-title-and-description">
 			<div class="row job-title">
 				<h4>Bachelor of Science | Specialization in Mathematics</h4>
 			</div>

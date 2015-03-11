@@ -7,6 +7,7 @@
 	</div>
 	<div class="col-sm-5 col-sm-offset-1">
 		<div class="website-image">
+			<a href="http://www.petrinary.com"></a>
 			<img class="img-responsive" src="images/petrinary.png">
 			<div class="caption">
 			</div>
@@ -22,6 +23,7 @@
 	</div>
 	<div class="col-sm-5">
 			<div class="website-image">
+			<a href="http://www.balmoralsociety.ca"></a>
 			<img class="img-responsive" src="images/balmoral.png">
 			<div class="caption">
 				</div>
@@ -37,6 +39,7 @@
 	</div>
 	<div class="col-sm-5 col-sm-offset-1">
 			<div class="website-image">
+				<a href="http://www.teambottcher.ca"></a>
 				<img class="img-responsive" src="images/bottcher.png">
 				<div class="caption">
 				</div>
@@ -54,7 +57,7 @@
 			<div class="website-image new-website">
 			<img class="img-responsive" src="images/balmoral.png">
 			<div class="caption">
-				</div>
+			</div>
 				<div class="caption-text">
 					<h3>Your Website Here?</h3>
 					<img class="center-block" src="images/white-line.png">
@@ -62,6 +65,9 @@
 				</div>
 				<div class="caption-still">
 					<img src="images/link.png">
+				</div>
+				<div class="plus-sign text-center">
+					<p class="text-center">+</p>
 				</div>
 		</div>
 	</div>

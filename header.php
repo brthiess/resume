@@ -10,4 +10,5 @@
   <script src="js/insertChart.js"></script>
   <script src="js/social.js"></script>
   <script src="js/caption.js"></script>
+  <script src="js/background.js"></script>
 </head>

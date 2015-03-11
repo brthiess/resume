@@ -2,6 +2,9 @@
 	<div class="col-sm-12">
 		<h2>Interests</h2>
 	</div>
+	<div class="col-sm-8 col-sm-offset-2">
+		<img class="center-block img-responsive" src="images/gray-line.png"><br><br>
+	</div>
 	<div class="col-xs-12">
 		<div class="col-lg-2 col-md-4 col-sm-6">
 			<div class="interest-icon center-block red text-center">

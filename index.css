@@ -31,6 +31,11 @@ body {
 	margin: 0em;
 }
 
+.hidden-image {
+	opacity: 0;
+	position: absolute;
+}
+
 /*****************************
 Jumbotron Container
 ******************************/
@@ -41,8 +46,8 @@ Jumbotron Container
 	margin-top: 0em;
 	position: relative;
 	width: 100%;
-	height: 100vh;
-	min-height: 39em;
+	min-height: 44em;
+	max-height: 45em;
 	background: linear-gradient(
 	rgba(0,0,0,0.5),
 	rgba(0,0,0,0.5)
@@ -51,7 +56,7 @@ Jumbotron Container
 	background-attachment: fixed;
 	background-size: cover;
 	text-align: center;
-	padding-top: 20vh;
+	padding-top: 10em;
 }
 
 .jumbotron-container h1 {
@@ -63,6 +68,7 @@ Jumbotron Container
 	height: auto;
 	display: inline;
 	margin-top: 0.5em;
+	margin-bottom: 2em;
 }
 
 /*************************
@@ -79,6 +85,8 @@ Bio Container
 
 .bio-container h1, .bio-container h2, .bio-container h3 {
 	color: #2c3e50;
+	font-weight: 600 !important;
+	margin-top: 15px;
 }
 
 .bio-container p {
@@ -89,6 +97,31 @@ Bio Container
 	color: #27ae60 !important;
 }
 
+.bio-description p {
+	text-align: left;
+}
+
+.bio-info {
+	text-align: left;
+	line-height: 2em;
+}
+
+@media (max-width: 992px) {
+	.bio-info {
+		text-align: center;
+	}
+}
+
+.bio-bio {
+	line-height: 2em;
+	text-align: center !important;
+}
+
+.bio-info p {
+	display:inline;
+}
+
+
 .my-pictures {
 	position:relative;
 	overflow: hidden !important;
@@ -98,108 +131,17 @@ Bio Container
 	border-style: solid;
 	border-width: 5px;
 	border-color: #2c3e50;
+	background-size: contain !important;
+	background: url(images/me1.jpg);
 }
 
-.my-pictures .background{
-	background-size: contain;
-	position:absolute;
+.my-pictures .background {
+	position: absolute;
 	height: 100%;
 	width: 100%;
 }
 
-.my-pictures .one {
-	background: url(images/me1.jpg);
-	background-size: contain;
-	animation: 30s one infinite; 
-  -webkit-animation: 30s one infinite;
-}
 
-.my-pictures .two {
-	background: url(images/me2.jpg);
-	background-size: contain;
-	opacity: 0;
-		animation: 30s two infinite; 
-  -webkit-animation: 30s two infinite;
-}
-
-.my-pictures .three {
-	background: url(images/me3.jpg);
-	background-size: contain;
-	opacity: 0;
-		animation: 30s three infinite; 
-  -webkit-animation: 30s three infinite;
-}
-
-.my-pictures .four {
-	background: url(images/me4.jpg);
-	background-size: contain;
-	opacity: 0;
-		animation: 30s four infinite; 
-  -webkit-animation: 30s four infinite;
-}
-
-.my-pictures .five {
-	background: url(images/me5.jpg);
-	background-size: contain;
-	opacity: 0;
-		animation: 30s five infinite; 
-  -webkit-animation: 30s five infinite;
-}
-
-
-
-
-@keyframes one {
-	0% {opacity: 1;}
-	15% {opacity: 1;}	
-	20% {opacity: 0;}
-	95% {opacity: 0;}
-	100% {opacity: 1;}
-}
-
-@keyframes two {
-	0% {opacity: 0;}
-	15% {opacity: 0;}	
-	20% {opacity: 1;}
-	35% {opacity: 1;}
-	40% {opacity: 0;}
-	100% {opacity: 0;}
-}
-
-@keyframes three {
-	0% {opacity: 0;}
-	35% {opacity: 0;}
-	40% {opacity: 1;}
-	55% {opacity: 1;}
-	60% {opacity: 0;}
-	100% {opacity: 0;}
-}
-
-@keyframes four {
-	0% {opacity: 0;}
-	55% {opacity: 0;}
-	60% {opacity: 1;}
-	75% {opacity: 1;}
-	80% {opacity: 0;}
-	100% {opacity: 0;}
-}
-
-@keyframes five {
-	0% {opacity: 0;}
-	75% {opacity: 0;}
-	80% {opacity: 1;}
-	95% {opacity: 1;}
-	100% {opacity: 0;}
-}
-
-@keyframes my-pictures {
-	0% {background: url(images/me1.jpg);}
-	20% {background: url(images/me2.jpg);}
-	40% {background: url(images/me3.jpg);}
-	60% {background: url(images/me4.jpg);}
-	80% {background: url(images/me5.jpg);}
-	100% {background: url(images/me1.jpg);}
-}
 
 @media (max-width: 600px) {
 	.my-pictures {
@@ -226,13 +168,18 @@ Experience
 .experience h1, .experience h2, .experience h3, .experience h4 {
 	color: white !important;
 	font-weight: 600 !important;
-	margin-top: 30px;
+	margin-top: 15px;
 }
 
 .experience .date {
 	color: white;
 	font-style: italic;
 	
+}
+@media (max-width:992px) {
+	.experience .job-title-and-description {
+		margin-left: 1.0em;
+	}
 }
 
 /******************
@@ -257,9 +204,19 @@ Education
 	
 }
 
+@media (max-width: 992px) {
+	.education .degree-title-and-description {
+		margin-left: 1em;
+	}
+}
+
 /**********************
 skills
 ************************/
+.skills h1, .skills h2, .skills h3 {
+	font-weight: 600 !important;
+	margin-top: 15px;
+}
 .skills {
 	background:white !important;
 }
@@ -290,8 +247,14 @@ skills
 /*******************
 Projects
 ********************/
+
+.projects h1, .projects h2, .projects h3 {
+	font-weight: 600 !important;
+	margin-top: 15px !important;
+}
+
 .projects {
-	background: #8e44ad;
+	background: #2c3e50;
 	padding-bottom: 2em;
 }
 
@@ -326,6 +289,15 @@ Projects
 	overflow: hidden;
 }
 
+.projects .website-image a {
+	position: absolute;
+	z-index: 9999;
+	top:0%;
+	left: 0%;
+	height: 100%;
+	width:100%;
+}
+
 .projects .website-image .caption {
 	position: absolute;
 	height: 100%;
@@ -347,6 +319,25 @@ Projects
 	z-index: 1001;
 }
 
+.projects .website-image .plus-sign {
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 13em;
+	height: 10px;
+	width: 10px;
+}
+
+.projects .website-image .plus-sign p {
+	position:relative;
+	background: black;
+	line-height: 0;
+	width: 100%;
+	text-align: center;
+	margin-left: -50px;
+}
+
+
 .projects .website-image .caption-still img {
 	height: 50%;
 	width: 50%;
@@ -365,6 +356,8 @@ Projects
 	z-index:1000
 }
 
+
+
 .projects .new-website > img {
 	opacity: 0;
 }
@@ -377,6 +370,10 @@ Projects
 /********************
 Interests
 **********************/
+.interests h1, .interests h2, .interests h3 {
+	font-weight: 600 !important;
+	margin-top: 15px;
+}
 .interests {
 	background: white;
 }
