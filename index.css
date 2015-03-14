@@ -221,6 +221,7 @@ skills
 
 .skills {
 	padding-top: 15px;
+	padding-bottom: 15px;
 	background:#7f8c8d !important;
 }
 
@@ -229,43 +230,32 @@ skills
 	font-size: 3.5em !important;
 }
 
-.skill-type {
-	z-index: 1;
+.skill-background {
+	background: white;
+	width: 18em;
 	height: 18em;
-}
-.skill-type {
-  perspective: 1000;
-  margin-bottom:2em;
+	position: relative;
+	margin-bottom: 2em;
 }
 
-.skill-card {
-  transform-style: preserve-3d;
-  transition: all 0.2s linear;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.skill-card:hover {
-  transform: rotateY(180deg);
-}
-.skill-card:hover .front {
-	opacity:0;
-	transition: opacity 0.2s;
-}
-.face {
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  backface-visibility: hidden;
-  color: white;
-  font-weight: 700;
+@media (max-width: 400px) {
+	.skill-background {
+		left: 0%;
+	}
 }
 
-.left {
-	position:absolute;
-	left: 5%;
-	top: 45%;
-	
+.door {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 555;
+	top: 0%;
+}
+
+.front {
+	z-index: 556;
+	background: #27ae60;
+	transition: top 0.2s;
 }
 
 .mini-skill p {
@@ -279,6 +269,20 @@ skills
 	position:absolute;
 	height: 25%;
 	color: white;
+}
+
+.garage {
+	position: absolute;
+	z-index: 9999;
+	overflow: hidden;
+	height: 16em;
+	width: 16em;
+	left: 1em;
+	top: 1em;
+}
+
+.garage:hover .front{
+	top: -100%;
 }
 
 .mini-skill:hover {
@@ -371,6 +375,11 @@ skills
 }
 .mini-skill.left-skill h3 {
 	font-size: 3em !important;
+}
+
+.mini-skill-container img {
+	height: 15px;
+	width: auto;
 }
 
 .right {
