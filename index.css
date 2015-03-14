@@ -186,7 +186,7 @@ Experience
 Education
 ******************/
 .education {
-	background: #7f8c8d;
+	background: black;
 	color: white;
 	padding-top: 2em;
 	padding-bottom: 2em;
@@ -215,33 +215,211 @@ skills
 ************************/
 .skills h1, .skills h2, .skills h3 {
 	font-weight: 600 !important;
-	margin-top: 15px;
+	margin-top: 0px;
+	color: white !important;
 }
+
 .skills {
-	background:white !important;
-}
-.skills .chart-holder {
-	position: relative;
-	width: 150px;
+	padding-top: 15px;
+	background:#7f8c8d !important;
 }
 
-.skills .chart-holder .percentage {
+.skills h3 {
+	font-weight: 500 !important;
+	font-size: 3.5em !important;
+}
+
+.skill-type {
+	z-index: 1;
+	height: 18em;
+}
+.skill-type {
+  perspective: 1000;
+  margin-bottom:2em;
+}
+
+.skill-card {
+  transform-style: preserve-3d;
+  transition: all 0.2s linear;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.skill-card:hover {
+  transform: rotateY(180deg);
+}
+.skill-card:hover .front {
+	opacity:0;
+	transition: opacity 0.2s;
+}
+.face {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  backface-visibility: hidden;
+  color: white;
+  font-weight: 700;
+}
+
+.left {
+	position:absolute;
+	left: 5%;
+	top: 45%;
+	
+}
+
+.mini-skill p {
 	position: absolute;
-	top: 40%;
-	left: 40%;
-	font-weight: 700;
-	font-size: 1.5em;
-	color: #666666;
-}
-.skills .chart-holder .skill {
-	font-weight: 700;
-	color: #666666;
+	height: 50%;
+	top: 20% !important;
+	font-size:1.5em;
 }
 
-.skills .skill {
-	font-weight: 500;
-	font-size: 2em;
-	margin-bottom: 1em;
+.mini-skill {
+	position:absolute;
+	height: 25%;
+	color: white;
+}
+
+.mini-skill:hover {
+	cursor: default;
+}	
+
+.mini-skill img {
+	height: 40px;
+	width: 40px;
+}
+
+.mini-skill.one {
+	background: #3498db;
+	left:0%;
+	top:0%;
+	width: 100%;
+}
+.mini-skill.one:hover {
+	background: #2980b9
+}
+.mini-skill.two {
+	background: #e67e22;
+	left:0%;
+	top:25%;
+	width: 100%;
+}
+.mini-skill.two:hover {
+	background:#d35400;
+}
+.mini-skill.three {
+	background: #1abc9c;
+	left:0%;
+	top:50%;
+	width: 100%;
+}
+.mini-skill.three:hover {
+	background:#16a085;
+}
+.mini-skill.four {
+	background: #f1c40f;
+	left:0%;
+	top:75%;
+	width: 100%;
+}
+.mini-skill.four:hover {
+	background:#f39c12;
+}
+.mini-skill.five {
+	background: #9b59b6;
+	left:50%;
+	top:0%;
+	width: 50%;
+}
+.mini-skill.five:hover {
+	background:#8e44ad;
+}
+
+.mini-skill.six {
+	background: #34495e;
+	left:50%;
+	top:25%;
+	width: 50%;
+}
+.mini-skill.six:hover {
+	background:#2c3e50;
+}
+
+.mini-skill.seven {
+	background: #e74c3c;
+	left:50%;
+	top:75%;
+	width: 50%;
+}
+.mini-skill.seven:hover {
+	background:#c0392b;
+}
+
+.mini-skill.left-skill {
+	width: 50% !important;
+	left: 0% !important;
+}
+.mini-skill.right-skill {
+	width: 50% !important;
+	left: 50% !important;
+}
+
+.mini-skill.left-skill img {
+	width: 25px;
+	height: auto;
+}
+.mini-skill.left-skill h3 {
+	font-size: 3em !important;
+}
+
+.right {
+	position:absolute;
+	right: 5%;
+	top: 45%;
+}
+
+.front {
+	backface-visibility:hidden !important;
+}
+.square {
+	backface-visibility:hidden !important;
+}
+
+.front img {
+	position: absolute;
+	left: 25%;
+	top: 25%;
+	width: 50%;
+	height: 50%;
+	backface-visibility: hidden !important;
+}
+
+.back {
+	background: white !important;
+	border-color: #2ecc71 !important;
+	text-align:center;
+}
+
+.face.back {
+  transform: rotateY(180deg);
+}
+
+.skills .square {
+	border-style: solid;
+	border-width: 5px;
+	border-color: white;
+	background: #2ecc71;
+	height: 18em;
+	width: 18em;
+	margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+	.skills .square {
+		height: 12em;
+		width:12em;
+	}
 }
 
 /*******************
@@ -250,12 +428,13 @@ Projects
 
 .projects h1, .projects h2, .projects h3 {
 	font-weight: 600 !important;
-	margin-top: 15px !important;
+	margin-top: 0px !important;
 }
 
 .projects {
 	background: #2c3e50;
-	padding-bottom: 2em;
+	padding-bottom: 15px;
+	padding-top: 15px;
 }
 
 .projects h2 {
