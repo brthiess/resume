@@ -8,9 +8,9 @@
 	
 	<div class="col-sm-4">
 		<div class="skill-background center-block">
-			<div class="garage">
-					<img class="up-arrow" src="images/up-arrow">
+			<div class="garage">					
 				<div class="front door">
+					<img class="up-arrow" src="images/up-arrow.png">
 					<img src="images/html5.png">
 				</div>
 				<div class="door">
@@ -28,6 +28,7 @@
 		<div class="skill-background center-block">
 			<div class="garage">
 				  <div class="front door">
+					<img class="up-arrow" src="images/up-arrow.png">
 					<img src="images/software.png">
 				  </div>
 				<div class="door">
@@ -45,6 +46,7 @@
 		<div class="skill-background center-block">
 			<div class="garage">
 			  <div class="front door">
+				<img class="up-arrow" src="images/up-arrow.png">
 				<img src="images/personality.png">
 			  </div>
 			  <div class="door">

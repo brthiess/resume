@@ -239,8 +239,8 @@ skills
 }
 
 @media (max-width: 400px) {
-	.skill-background {
-		left: 0%;
+	.skills{
+		margin-left: -15px !important;
 	}
 }
 
@@ -256,6 +256,15 @@ skills
 	z-index: 556;
 	background: #27ae60;
 	transition: top 0.2s;
+}
+
+.garage .up-arrow {
+	position: absolute;
+	left: 40%;
+	top: 80%;
+	z-index: 9999;
+	height: 3em;
+	width: 3em;
 }
 
 .mini-skill p {
